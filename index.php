@@ -1,6 +1,6 @@
 <?php 
 
-include __DIR__ . '/api.php';
+include __DIR__ . '/db.php';
 //Controllo per corretto funzionamento dell'include.
 // echo'<pre>';
 // var_dump($db);
