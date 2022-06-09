@@ -18,24 +18,39 @@
 </head>
 <body>
   <div id="app">
-    <h1>Stampare tramite AXIOS</h1>
-    <div class="ir-card"
-          v-for="(disc, index) in discs" :key="`disc-${index}`"
-          >
-      <div class="cardimg">
-        <img :src="disc.poster" :alt="disc.title">
-  
-        <div class="testo">
-          <h5>{{disc.title}}</h5>
-          <p>{{disc.author}} <br> {{disc.year}}</p>
+
+    <header>
+      <div class="container-fluid ir-head ">
+        <div class="row">
+          <div class="col-6 left">
+            <img src="img/logo-small.svg" alt="">
+          </div>
+    
         </div>
-      
       </div>
-    </div>
 
+    </header>
+    <main>
+      <div class="sfondo">
+        <div class="container d-flex ir-dischi">
+          <div class="ir-card"
+                v-for="(disc, index) in discs" :key="`disc-${index}`"
+                >
+            <div class="cardimg">
+              <img :src="disc.poster" :alt="disc.title">
+        
+              <div class="testo">
+                <h5>{{disc.title}}</h5>
+                <p>{{disc.author}} <br> {{disc.year}}</p>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
   </div>
-
-
 
   <script src="js/script.js"></script>
 </body>

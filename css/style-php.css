@@ -1,11 +1,47 @@
-
 body{
   background-color: rgb(30,45,59);
 }
 
-h1{
-  color: white;
-  padding-top: 30px;
+/* header */
+
+.ir-head{
+  height: 80px;
+  background-color: rgb(46, 58, 70);
+}  
+
+.left{
+  padding: 10px 20px;
+} 
+    
+.right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+} 
+
+.btn-box{
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+.choice{
+  width: 300px;
+}
+
+.left img{
+  width: 50px;
+  filter: invert(30%) sepia(10%) saturate(2500%) hue-rotate(80deg) brightness(110%) contrast(80%); 
+}
+
+/* /header */
+
+.sfondo{
+  height: calc(100vh - 80px);
+  background-color:rgb(30,45,59);
+}
+.ir-dischi{
+  flex-wrap: wrap;
 }
 
 .ir-card{
@@ -13,6 +49,7 @@ h1{
   width: 220px;
   height: 370px;
   margin: 50px 30px 0px 0px;
+  background-color:rgb(46, 58, 70);
 } 
 
 .cardimg{
