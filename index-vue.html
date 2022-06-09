@@ -12,10 +12,31 @@
   
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
+  <link rel="stylesheet" href="css/style-php.css">
+
   <title>Document</title>
 </head>
 <body>
+  <div id="app">
+    <h1>Stampare tramite AXIOS</h1>
+    <div class="ir-card"
+          v-for="(disc, index) in discs" :key="`disc-${index}`"
+          >
+      <div class="cardimg">
+        <img :src="disc.poster" :alt="disc.title">
+  
+        <div class="testo">
+          <h5>{{disc.title}}</h5>
+          <p>{{disc.author}} <br> {{disc.year}}</p>
+        </div>
+      
+      </div>
+    </div>
 
-  <script src="./script.js"></script>
+  </div>
+
+
+
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -25,7 +25,7 @@ include __DIR__ . '/db.php';
   <title>Document</title>
 </head>
 <body>
-  <h1>Collezione della lista dischi</h1>
+  <h1>Stampare tramite in PHP</h1>
   <!-- cards -->
   <div class="ir-card my-5" >
     <?php foreach($db as $card => $value):?>
